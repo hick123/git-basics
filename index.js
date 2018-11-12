@@ -1,10 +1,9 @@
-function sum(a, b , f) {
-	a=10;
-	b=39;
-	d = 150;
-	f = 55;
-
-	return a + b + f + d;
+function sum(a=10, b=39, ...rest) {
+	var sum = a + b;
+	for (let i = 0; i < rest.length; i++) {
+		sum += rest[i];
+	}
+	return sum;
 }
 
 function div(a,b){
