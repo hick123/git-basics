@@ -1,9 +1,14 @@
-function sum(a, b , c) {
+function sum(a, b , f) {
 	a=10;
 	b=39;
-	c=203;
 	d = 150;
-	return a + b + c + d;
+	f = 55;
+
+	return a + b + f + d;
+}
+
+function div(a,b){
+	return a/b;
 }
 
 function mod(a,c) {
